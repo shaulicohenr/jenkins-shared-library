@@ -5,8 +5,8 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: nginx
+    app: flask
   ports:
     - protocol: TCP
       port: 80 # ClusterIP's Port
-      targetPort: 80 # Pod's Port
+      targetPort: 5000 # Pod's Port
